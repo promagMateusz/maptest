@@ -13,6 +13,7 @@ class MarkerStateNotifier extends ChangeNotifier {
     Set<LatLng> get getLatLngSet => _latLngSet;
 
     void addMarker(LatLng pos){
+      print('hey $pos');
         _markers.add(
             MapMarker(
                 id: '$x',
